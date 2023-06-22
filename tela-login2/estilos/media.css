@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@media screen and (min-width:700px) {
+    section{
+        display: flex;
+    }
+    img{
+        display: none;
+       
+    }
+    #imagem{
+        background-image: url(../imagens/ondadesktop1.png);
+        background-size: cover;
+        width: 50vw;
+        border-radius: 20px 0px 0px 20px;  
+    }
+    main{
+        width: 90%;
+        border-radius: 20px;
+    }
+    #formulario{
+        width: 50vw;
+        border-radius: 0px 20px 20px 0px ;
+    }
+    #log, #forget{   
+        cursor: pointer;
+        display: inline;
+         width: 150px;
+         height: 40px;
+        margin: auto;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        transition: background-color .3s,  font-size .3s, color .3s;  
+    }
+}
+@media screen and (min-width: 1000px){
+    
+    section{
+        height: 300px;
+    }
+    #formulario > #bemvindo{
+        
+        margin-top: 50px;
+        
+        
+    }
+}

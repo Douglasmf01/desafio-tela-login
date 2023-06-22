@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <img src="imagens/ondas-celular02.png" alt="imagem-login">
+            </div>
+            <div id="formulario">
+                
+                <h2 id="bemvindo">Seja bem vindo novamente! </h2> <h2 id="facalogin"> Faça login para acessar sua conta</h2>
+                <form action="login.php" method="post">
+                    
+                    <label for="iemail"><span class="material-icons">face</span></label>
+                    <input type="email" name="email" id="iemail" required><br> 
+                    <label for="isenha"><span class="material-icons">key</span></label>
+                    <input type="password" name="senha" id="isenha" minlength="6" required><br>
+                    <input id="log" type="submit" value="login"> 
+                    <input id="forget" type="submit" value="Esqueci a senha">
+           
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

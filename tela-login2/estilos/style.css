@@ -1,0 +1,85 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    ---verde: #49a09d;
+    ---lilas: #5f2c82;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(to bottom, var(---lilas), black);
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+main{
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;  
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid white;    
+}
+img{
+    width: 80vw;
+    margin-bottom: -5px;   
+}
+#formulario {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.932);
+}
+#formulario > h2{
+    color: var(---lilas);
+    font-size: 1.4em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.678);
+}
+
+#formulario > form> label{
+    font-size: 1.2em; 
+    
+}
+input{
+   background-color:  #4aa19f;
+}
+#iemail, #isenha{
+    height: 40px;
+    width: 70%;
+    outline: none;
+     font-size: 1.5em;
+     border-radius: 10px;
+     margin: 5px;
+}
+#iemail:hover, #isenha:hover{
+    background-color: #2b7773;
+}
+#iemail:focus-within, #isenha:focus-within{
+    background-color: #aeb8b7;
+}
+
+label{
+    color: var(---lilas);
+}
+#log, #forget{   
+    display: block;
+     width: 200px;
+     height: 40px;
+    margin:auto;
+    margin-bottom: 2px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: background-color .3s, color .3s;  
+}
+#log:hover, #forget:hover{
+    background-color: #2b7773;
+    color: black;   
+    cursor: pointer; 
+}
